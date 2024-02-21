@@ -1,0 +1,13 @@
+#root {
+    background-color: white;
+    max-width: 1280px;
+    height: 98vh;
+    margin: 0 auto;
+    padding: 2rem;
+    /* text-align: center; */
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

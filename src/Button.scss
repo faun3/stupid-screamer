@@ -1,0 +1,63 @@
+#jumpscare {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  // background-color: red;
+  background-image: url("/jeff.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#scoped {
+  .btn-wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    // transform: translate(-50%, -50%);=
+    /* background-color: blue; */
+  }
+
+  .button-cmp {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+  }
+
+  .folder-wrapper {
+    background-color: rgb(235, 84, 84);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 1s;
+  }
+
+  .folder {
+    width: 150px;
+    height: 150px;
+  }
+  .white-circle {
+    background-color: white;
+    border-radius: 50%;
+    transition: all 2s;
+  }
+  .red-dropshadow {
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .btn-wrapper:hover .folder-wrapper {
+    transform: scale(75%);
+    background-color: red;
+  }
+  .btn-wrapper:hover .white-circle {
+    transform: scale(130%);
+  }
+  .btn-wrapper:hover .red-dropshadow {
+    filter: drop-shadow(0 0 10px red);
+  }
+}
