@@ -11,13 +11,16 @@ function ButtonFancy() {
     const [jump, setJump] = useState(false);
 
     async function handleClick(ev){
+        let audio = new Audio("/scream.mp3");
         setJump(true);
+        audio.play();
         console.log("AAA");
 
         setTimeout(function(){
-            console.log("AAA after 3 seconds");
             setJump(false);
-        }, 2000);
+            audio.pause();
+            audio.currentTime = 0;
+        }, 2 * 1000);
 
     }
     
