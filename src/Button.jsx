@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import "./Button.scss"
 
@@ -9,9 +9,10 @@ import FolderIcon from '@mui/icons-material/Folder';
 
 function ButtonFancy() {
     const [jump, setJump] = useState(false);
+    const [audio, setAudio] = useState(new Audio('/scream.mp3'));
 
     async function handleClick(ev){
-        let audio = new Audio("/scream.mp3");
+        // let audio = new Audio("/scream.mp3");
         setJump(true);
         audio.play();
         console.log("AAA");
